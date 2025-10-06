@@ -13,7 +13,7 @@ const path = require('path')
 
 const isProd = process.env.NODE_ENV === 'production'
 
-// paths
+// Пути
 const paths = {
 	src: 'src',
 	pages: 'src/pages/**/*.pug',
@@ -29,15 +29,13 @@ const paths = {
 	dist: 'dist',
 }
 
-// clean
+// Очистка
 function clean() {
 	return deleteAsync([paths.dist])
 }
 
-// load site data (single JSON/JS file) for use in Pug
+// Загрузка данных сайта (один JSON/JS файл) для Pug
 function loadData(file) {
-	// можно расширить: читать per-page json по file.path
-	// здесь читаем общий data/pages.json
 	const dataPath = path.join(__dirname, paths.data, 'pages.json')
 	if (fs.existsSync(dataPath)) {
 		return JSON.parse(fs.readFileSync(dataPath, 'utf8'))
@@ -45,57 +43,57 @@ function loadData(file) {
 	return {}
 }
 
-// pug -> html
+// Pug -> HTML
 function html() {
-	return (
-		src(paths.pages)
-			.pipe(plumber())
-			.pipe(data(loadData))
-			// option pretty only in dev
-			.pipe(
-				pug({
-					pretty: !isProd,
+	return src(paths.pages)
+		.pipe(plumber())
+		.pipe(data(loadData))
+		.pipe(
+			pug({
+				pretty: !isProd,
+			})
+		)
+		.pipe(
+			gulpif(
+				isProd,
+				htmlmin({
+					collapseWhitespace: true,
+					removeComments: true,
 				})
 			)
-			.pipe(
-				gulpif(
-					isProd,
-					htmlmin({
-						collapseWhitespace: true,
-						removeComments: true,
-					})
-				)
-			)
-			// ensure .html extension
-			.pipe(rename({ extname: '.html' }))
-			.pipe(dest(paths.dist))
-			.pipe(browserSync.stream())
-	)
+		)
+		.pipe(rename({ extname: '.html' }))
+		.pipe(dest(paths.dist))
+		.pipe(browserSync.stream())
 }
 
-// copy assets (css/js/img/static)
+// Копирование ресурсов
 function assetsCss() {
 	return src(paths.assets.css)
 		.pipe(dest(path.join(paths.dist, 'assets/css')))
 		.pipe(browserSync.stream())
 }
+
 function assetsJs() {
 	return src(paths.assets.js)
 		.pipe(dest(path.join(paths.dist, 'assets/js')))
 		.pipe(browserSync.stream())
 }
+
+// ИСПРАВЛЕНО: добавлен {encoding: false} для бинарных файлов
 function assetsImg() {
-	return src(paths.assets.img)
+	return src(paths.assets.img, { encoding: false })
 		.pipe(dest(path.join(paths.dist, 'assets/img')))
 		.pipe(browserSync.stream())
 }
+
 function staticFiles() {
-	return src(paths.assets.static)
+	return src(paths.assets.static, { encoding: false })
 		.pipe(dest(paths.dist))
 		.pipe(browserSync.stream())
 }
 
-// dev server
+// Сервер разработки
 function serve(done) {
 	browserSync.init({
 		server: {
@@ -107,7 +105,7 @@ function serve(done) {
 	done()
 }
 
-// watch
+// Наблюдение за изменениями
 function watcher() {
 	watch(
 		[paths.pages, paths.layouts, paths.includes, path.join(paths.data, '**/*')],
@@ -123,6 +121,7 @@ const build = series(
 	clean,
 	parallel(html, assetsCss, assetsJs, assetsImg, staticFiles)
 )
+
 const dev = series(
 	() => {
 		process.env.NODE_ENV = 'development'
@@ -132,6 +131,7 @@ const dev = series(
 	serve,
 	watcher
 )
+
 const prod = series(() => {
 	process.env.NODE_ENV = 'production'
 	return Promise.resolve()

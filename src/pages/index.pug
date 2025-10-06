@@ -1,8 +1,12 @@
-doctype html
-html(lang="en")
-	head
-		meta(charset="UTF-8")
-		meta(name="viewport", content="width=device-width, initial-scale=1.0")
-		title Document
-	body 
-		h1 Hello! 
+extends ../layouts/base.pug
+
+block title
+  title Приемка квартир | Дионис
+
+block content
+  section.hero 
+    .container 
+      div.hero__title
+        h1 Приемка квартир в новостройке
+        p Широкий профиль, гарантия качества и внимание к деталям! 
+      a(href="#") Подробнее

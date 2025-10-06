@@ -1,0 +1,57 @@
+:root {
+	--font-family--basic: 'Inter';
+
+	/* input bg-color */
+	--input--default-bg-color: rgba(255, 255, 255, 1);
+
+	/* input border-color */
+	--input--default-border-color: rgba(129, 149, 248, 0.2);
+	--input--hover-border-color: rgba(129, 149, 248, 0.2);
+	--input--focus-border-color: rgba(129, 149, 248, 0.2);
+	--input--error-border-color: rgba(255, 121, 117, 1);
+
+	/* input placeholder-text-color */
+	--input--default-placeholder-text-color: rgba(160, 160, 187, 1);
+
+	/* input text-color */
+	--input--default-text-color: rgba(38, 38, 40, 1);
+	--input--error-text-color: rgba(246, 173, 155, 1);
+
+	--color-blue-600: rgba(61, 89, 235, 1);
+
+	--btn--border-radius: 16px;
+	--btn--padding-Y: 18px;
+
+	/* bottom text color */
+	--btn-primary--default-text-color: rgba(255, 255, 255, 1);
+	--btn-secondary--default-text-color: rgba(61, 89, 235, 1);
+
+	/* botton prymary */
+	--btn-primary--default-bg-color: rgba(61, 89, 235, 1);
+	--btn-primary--hover-bg-color: rgba(79, 108, 255, 1);
+	--btn-primary--active-bg-color: rgba(79, 123, 255, 1);
+
+	/* botton secondary */
+	--btn-secondary--default-bg-color: rgba(255, 255, 255, 1);
+
+	/* botton response base btn (header) */
+	--btn-header--padding-Y: 8px;
+	--btn-header--padding-X: 16px;
+	--btn-header--border-radius: 10px;
+
+	/* button response (black) */
+	--btn-footer-response--default-bg-color: rgba(33, 33, 35, 1);
+	--btn-footer-response--hover-bg-color: rgba(38, 38, 40, 1);
+	--btn-footer-response--active-bg-color: rgba(27, 27, 29, 1);
+
+	/* botton nav */
+	--btn-nav--blur: blur(30px);
+	--btn-nav--default-bg-color: rgba(255, 255, 255, 0.2);
+	--btn-nav--hover-bg-color: rgba(129, 149, 248, 0.2);
+	--btn-nav--active-bg-color: rgba(176, 187, 241, 0.3);
+
+	/* botton nav secondary */
+	--btn-nav-secondary--default-bg-color: rgba(255, 255, 255, 0);
+	--btn-nav-secondary--hover-bg-color: rgba(255, 255, 255, 0.5);
+	--btn-nav-secondary--active-bg-color: rgba(255, 255, 255, 1);
+}

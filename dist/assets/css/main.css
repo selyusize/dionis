@@ -1,0 +1,24 @@
+.hero {
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	gap: 20px;
+	height: 842px;
+	background-image: url(../img/priemka.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		margin-bottom: 33px;
+	}
+}
+
+.hero__title {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
