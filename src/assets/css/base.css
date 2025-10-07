@@ -64,15 +64,53 @@ h2 {
 }
 
 h3 {
-	font-size: 32px;
+	font-size: 28px;
 	font-weight: 500;
 
 	line-height: 100%;
 	letter-spacing: -3%;
 
 	@media (min-width: 744px) {
+		font-size: 32px;
+	}
+
+	@media (min-width: 1440px) {
 		font-size: 40px;
 	}
+}
+
+section.blue-bg,
+section.white-bg {
+	position: relative;
+}
+
+section.blue-bg::before {
+	content: '';
+	height: 34px;
+	width: 100%;
+	border-top-right-radius: 32px;
+	border-top-left-radius: 32px;
+	position: absolute;
+	top: -32px;
+	z-index: 100;
+	background-color: var(--bg-section--blue);
+}
+
+section.white-bg::before {
+	content: '';
+	height: 34px;
+	width: 100%;
+	border-top-right-radius: 32px;
+	border-top-left-radius: 32px;
+	position: absolute;
+	top: -32px;
+	z-index: 100;
+	background-color: white;
+}
+
+section .container {
+	padding-top: 32px;
+	padding-bottom: 78px;
 }
 
 h4 {

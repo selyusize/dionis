@@ -59,8 +59,6 @@
 }
 
 .btn--response {
-	max-width: 166px;
-
 	background-color: var(--btn-primary--default-bg-color);
 	color: var(--btn-primary--default-text-color);
 
@@ -74,8 +72,6 @@
 }
 
 .btn--response-footer {
-	max-width: 166px;
-
 	background-color: var(--btn-footer-response--default-bg-color);
 	color: var(--btn-primary--default-text-color);
 

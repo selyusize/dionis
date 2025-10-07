@@ -1,0 +1,32 @@
+.blue-theme {
+	h1,
+	h2,
+	h3,
+	h4 {
+		color: white;
+	}
+	.h6,
+	.paragraph {
+		color: rgba(255, 255, 255, 0.8);
+	}
+}
+
+.blue-bg {
+	background-color: var(--bg-section--blue);
+}
+
+.white-theme {
+	h1,
+	h2,
+	h3,
+	h4 {
+		color: rgba(27, 27, 29, 1);
+	}
+	.h6,
+	.paragraph {
+		color: rgba(59, 59, 60, 1);
+	}
+	.paragraph-secondary {
+		color: rgba(110, 110, 127, 1);
+	}
+}

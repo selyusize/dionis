@@ -54,4 +54,7 @@
 	--btn-nav-secondary--default-bg-color: rgba(255, 255, 255, 0);
 	--btn-nav-secondary--hover-bg-color: rgba(255, 255, 255, 0.5);
 	--btn-nav-secondary--active-bg-color: rgba(255, 255, 255, 1);
+
+	--bg-section--blue: rgba(61, 89, 235, 1);
+	--color-paragraph--gray: rgba(255, 255, 255, 0.8);
 }
