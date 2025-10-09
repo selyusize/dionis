@@ -1,0 +1,40 @@
+extends ../layouts/base.pug
+
+block title
+  title Приемка квартир | Дионис
+
+block content
+  section.hero.blue-theme
+    .container 
+      div.hero__title
+        h1 Приемка квартир
+      a(href="#").btn.btn--primary Записаться на приёмку
+  section.blue-theme.blue-bg.why
+    .container
+      div
+        .tag.h6
+         img(src="../assets/img/svg/Ellipse.svg", alt="ellipse")
+         h6 об услуге
+        h2.mb-40 Что входит в приёмку квартиры?
+      div.why__description
+        p.paragraph Согласуем удобное время, приедем и проведём тщательный осмотр по стандартам СП, ГОСТ и ПУЭ. Зафиксируем все выявленные недостатки, в том числе на фото и видео, а в конце передадим вам подробный акт осмотра с рекомендациями от эксперта.
+      div 
+        h2 Что говорят наши клиенты
+      //- здесь должен быть слайдер
+  section.white-theme.white-bg.services
+    .container
+      div
+        .tag.h6
+          img(src="../assets/img/svg/h6.svg", alt="ellipse")
+          h6 Оборудование
+        h2.mb-40 Используемые инструменты
+      div.why__description
+        p.paragraph Наши специалисты приезжают со своим набором поверенных и сертифицированных инструментов — всё откалибровано и соответствует стандартам, чтобы вы получили объективную и надёжную оценку
+      //- здесь должен быть слайдер
+  section.white-theme.white-bg.services
+    .container
+      div
+        .tag.h6
+          img(src="../assets/img/svg/h6.svg", alt="ellipse")
+          h6 Тарифы
+        h2.mb-40 Сколько стоит приёмка квартиры
