@@ -39,48 +39,8 @@ block content
           img(src="../assets/img/svg/h6.svg", alt="ellipse")
           h6 Услуги
         h2.mb-40 С чем мы можем вам помочь
-      article.priemka
-        .priemka__description
-          h3 Приемка квартир
-          p.paragraph Осмотр с помощью проф-оборудования, фото и видео-фиксация дефектов и оформление акта по СП, ГОСТ, ПУЭ.
-        a(href="#").btn.btn--secondary Подробнее
-      .services-list 
-        .services-list__item 
-          .services-list__item--title
-            h4 Инженерные изыскания
-            p.paragraph Выявляем дефекты, оцениваем состояние здания и оформляем техническое заключение
-          .services-list__item--image 
-            img(src="../assets/img/services/services1.jpg", alt="services1")
-        .services-list__item 
-          .services-list__item--title
-            h4 Строительный контроль
-            p.paragraph Проверка качества и соответствия работ проектной документации и нормативным требованиям
-          .services-list__item--image 
-            img(src="../assets/img/services/services2.jpg", alt="services2")
-        .services-list__item 
-          .services-list__item--title
-            h4 Авторский<br class="table-hidden" /> надзор
-            p.paragraph Контроль соответствия строительства проектным решениям от лица разработчика
-          .services-list__item--image 
-            img(src="../assets/img/services/services3.jpg", alt="services3")
-        .services-list__item 
-          .services-list__item--title
-            h4.desktop-nowrap Обследование<br class="table-hidden" /> зданий и сооружений
-            p.paragraph Диагностика оснований и несущих конструкций с выдачей технического заключения
-          .services-list__item--image 
-            img(src="../assets/img/services/services4.jpg", alt="services4")
-        .services-list__item 
-          .services-list__item--title
-            h4 Работы по проектированию
-            p.paragraph Проектирование жилых, общественных и промышленных объектов с нуля под ключ
-          .services-list__item--image 
-            img(src="../assets/img/services/services5.jpg", alt="services5")
-        .services-list__item 
-          .services-list__item--title
-            h4.desktop-nowrap Строительно- <br class="table-hidden" />судебные экспертизы 
-            p.paragraph Анализ и оценка строительных объектов для разрешения споров и представления в суде
-          .services-list__item--image 
-            img(src="../assets/img/services/services6.jpg", alt="services6")
+      include '../includes/components/article-priemka.pug'
+      include '../includes/components/services-list.pug'
   section.blue-theme.blue-bg.reviews
     .container
       .tag.h6

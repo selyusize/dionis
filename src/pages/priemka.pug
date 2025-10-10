@@ -9,7 +9,7 @@ block content
       div.hero__title
         h1 Приемка квартир
       a(href="#").btn.btn--primary Записаться на приёмку
-  section.blue-theme.blue-bg.why
+  section.blue-theme.blue-bg
     .container
       div
         .tag.h6
@@ -19,7 +19,7 @@ block content
       div.why__description
         p.paragraph Согласуем удобное время, приедем и проведём тщательный осмотр по стандартам СП, ГОСТ и ПУЭ. Зафиксируем все выявленные недостатки, в том числе на фото и видео, а в конце передадим вам подробный акт осмотра с рекомендациями от эксперта.
       div 
-        h2 Что говорят наши клиенты
+        h2 В ходе осмотра проверяем
       //- здесь должен быть слайдер
   section.white-theme.white-bg.services
     .container
@@ -38,3 +38,29 @@ block content
           img(src="../assets/img/svg/h6.svg", alt="ellipse")
           h6 Тарифы
         h2.mb-40 Сколько стоит приёмка квартиры
+      .tarif-list 
+        .tarif.tarif-white
+          .tarif-tag
+            img(src="../assets/img/svg/h6.svg", alt="ellips")
+            span Тариф 1
+          .tarif--title 
+            h4 Площать квартиры
+            span До 40 м²
+            p Оптимальное решение для студий и небольших квартир. Полная проверка за фиксированную цену
+          .tarif--price 
+            span Стоимость
+            span.tarif--price--num 4 000 руб.
+          button.tarif--buy Заказать приёмку
+        .tarif.tarif-blue
+          .tarif-tag
+            img(src="../assets/img/svg/Ellipse.svg", alt="ellips")
+            span Тариф 2
+          .tarif--title 
+            h4 Площать квартиры
+            span От 40 м²
+            p Подходит для просторных квартир и апартаментов. Стоимость зависит от метража
+          .tarif--price 
+            span Стоимость
+            span.tarif--price--num 100 руб. / м²
+          button.tarif--buy Заказать приёмку
+  

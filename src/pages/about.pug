@@ -4,15 +4,75 @@ block title
   title О нас | Дионис
 
 block content
-  //- здесь должна быть секция-превью страницы
-  section.blue-theme.blue-bg.why
+  section.white-theme.white-bg.hero-about-section
+    .container
+      div.hero-about-section--header
+        .tag.h6
+          img(src="../assets/img/svg/h6.svg", alt="ellipse")
+          h6 О нас
+        h1 О компании
+      img(src="../assets/img/about-hero.jpg", alt="home").hero-about-section--preview.desktop-hidden
+      img(src="../assets/img/hero-desk.jpg", alt="home").hero-about-section--preview.table-hidden
+      .hero-about-section--description-list
+        .description--list__item 
+          img(src="../assets/img/svg/about/hero/short-about.svg", alt="short-about icon")
+          div 
+            h4 Коротко о нас
+            p ООО «СК ДИОНИС» — многопрофильная строительная компания, объединяющая экспертов в сфере технического надзора, проектирования и строительства. Мы не просто проверяем качество — мы создаём его на всех этапах: от проектной документации до сдачи объекта «под ключ»
+        .description--list__item 
+          img(src="../assets/img/svg/about/hero/team.svg", alt="team icon")
+          div 
+            h4 О команде
+            p Наша команда — это инженеры, проектировщики и специалисты строительного контроля с официальными допусками СРО, НОСТРОЙ и НОПРИЗ. Мы выполняем приёмку квартир, обследование зданий и инженерных систем, сопровождаем перепланировки, а также реализуем проекты по строительству жилых и коммерческих объектов
+        .description--list__item 
+          img(src="../assets/img/svg/about/hero/instrument.svg", alt="instrument icon")
+          div 
+            h4 Наше оборудование
+            p Мы используем сертифицированное оборудование, строго следуем нормативам и всегда соблюдаем сроки. Нам доверяют потому, что мы знаем, как должно быть сделано правильно — и добиваемся этого в каждой детали
+  section.blue-theme.blue-bg.about-services-section
     .container
       div
         .tag.h6
-         img(src="../assets/img/svg/Ellipse.svg", alt="ellipse")
-         h6 спект услуг
+          img(src="../assets/img/svg/Ellipse.svg", alt="ellipse")
+          h6 спект услуг
         h2.mb-40 Мы осуществляем
-      //- здесь должен быть лист карточек
+      .about-services-list 
+        .about-services-list__item
+          img.about-services-list__item--svg(src="../assets/img/svg/about/services/multiproject.svg" alt="svg")
+          h4 Комплексное проектирование
+          p Разработка проектов любой сложности — точно, грамотно, в срок
+        .about-services-list__item
+          img.about-services-list__item--svg(src="../assets/img/svg/about/services/docs.svg" alt="svg")
+          h4 Организационно-техническая подготовка к строительству
+          p Этап, обеспечивающий бесперебойное ведение строительно-монтажных работ
+        .about-services-list__item
+          img.about-services-list__item--svg(src="../assets/img/svg/about/services/gen-proekt.svg" alt="svg")
+          h4 Все виды ремонтных работ
+          p Капитальный и косметический ремонт помещений любого назначения
+        .about-services-list__item
+          img.about-services-list__item--svg(src="../assets/img/svg/about/services/organizm.svg" alt="svg")
+          h4 Подготовка документации к согласованию в частной и Гос Экспертизе
+          p Составим и оформим пакет документов для прохождения экспертизы
+        .about-services-list__item
+          img.about-services-list__item--svg(src="../assets/img/svg/about/services/montaj.svg" alt="svg")
+          h4 Ведение строительно-монтажных работ
+          p Профессиональное выполнение работ с гарантией соответствия техническим требованиям
+        .about-services-list__item
+          img.about-services-list__item--svg(src="../assets/img/svg/about/services/engineer.svg" alt="svg")
+          h4 Выполнение консультационных и инжиниринговых услуг
+          p По виду: техническое обследование зданий и сооружений, инженерных систем с выдачей заключения
+        .about-services-list__item
+          img.about-services-list__item--svg(src="../assets/img/svg/about/services/pairwork.svg" alt="svg")
+          h4 Выполнение функций генерального проектировщика
+          p Обеспечиваем разработку всех проектных решений и смет
+        .about-services-list__item
+          img.about-services-list__item--svg(src="../assets/img/svg/about/services/konsult.svg" alt="svg")
+          h4 Инженерные изыскания и авторский надзор 
+          p Проводим инженерные изыскания и следим за реализацией проекта на всех этапах строительства
+        .about-services-list__item
+          img.about-services-list__item--svg(src="../assets/img/svg/about/services/buildhome.svg" alt="svg")
+          h4 Строительство домов, коттеджей и других объектов под ключ
+          p Комплексное строительство жилых и нежилых объектов
   section.white-theme.white-bg.services
     .container
       div
@@ -20,5 +80,14 @@ block content
           img(src="../assets/img/svg/h6.svg", alt="ellipse")
           h6 Сертификаты
         h2.mb-40 Свидетельство о допуске к строительным и проектировочным работам
-      //- здесь должны быть карточки двух файлов
-  
+      .file-list 
+        a(href="#").file 
+          img(src="../assets/img/svg/about/pdf.svg", alt="pdf icon")
+          div 
+            h4 ВЫПИСКА из единого реестра сведений о членах СРО
+            p в области инженерных изысканий и в области архитектурно-строительного проектирования и их обязательствах
+        a(href="#").file 
+          img(src="../assets/img/svg/about/pdf.svg", alt="pdf icon")
+          div 
+            h4 УВЕДОМЛЕНИЕ о включении сведений в Национальный реестр специалистов
+            p в области инженерных изысканий и архитектурно-строительного проектирования

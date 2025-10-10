@@ -30,3 +30,7 @@
 		color: rgba(110, 110, 127, 1);
 	}
 }
+
+.white-bg {
+	background-color: rgb(250, 250, 252);
+}
