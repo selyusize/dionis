@@ -7,9 +7,10 @@ block content
   section.hero.blue-theme
     .container 
       div.hero__title
-        h1 Приемка квартир в новостройке
+        h1 Приёмка квартир в новостройке
         p.paragraph Широкий профиль, гарантия качества и внимание к деталям! 
       a(href="#").btn.btn--primary Подробнее
+        img(src="../assets/img/svg/btn-icon-main.svg", alt="arrow")
   section.blue-theme.blue-bg.why
     .container
       div
@@ -39,14 +40,20 @@ block content
           img(src="../assets/img/svg/h6.svg", alt="ellipse")
           h6 Услуги
         h2.mb-40 С чем мы можем вам помочь
-      include '../includes/components/article-priemka.pug'
-      include '../includes/components/services-list.pug'
+      include ../includes/components/article-priemka.pug
+      include ../includes/components/services-list.pug
   section.blue-theme.blue-bg.reviews
     .container
       .tag.h6
          img(src="../assets/img/svg/Ellipse.svg", alt="ellipse")
          h6 Отзывы
-      h2.mb-40 Что говорят<br class="mobile-hidden desktop-hidden"> наши клиенты
+      div.custom-header-slider 
+        h2 Что говорят<br class="mobile-hidden desktop-hidden"> наши клиенты
+        .slider-controllers.mobile-hidden-flex
+            button.controller.disable.prev
+              img(src="../assets/img/svg/arrow-btn-slider.svg", alt="arrow")
+            button.controller.active.next
+              img(src="../assets/img/svg/arrow-btn-slider.svg", alt="arrow")
 
       #slider 
         .reviews-list#slider-track 
@@ -68,55 +75,94 @@ block content
               .review__author--image 
                 img(src="../assets/img/reviews/author1.jpg", alt="author1")
               .review__author--description
-                .author--description__name Ирина
+                .author--description__name Ольга
                 .author--description__stars
                   img(src="../assets/img/svg/iconoir_star-solid.svg", alt="star")
                   img(src="../assets/img/svg/iconoir_star-solid.svg", alt="star")
                   img(src="../assets/img/svg/iconoir_star-solid.svg", alt="star")
                   img(src="../assets/img/svg/iconoir_star-solid.svg", alt="star")
                   img(src="../assets/img/svg/iconoir_star-solid.svg", alt="star")
-            p.review__content Обращались на приёмку однокомнатной новостройки. Ответили на сообщение сразу, несмотря на позднее время, договорились о времени, цена совпала. На прием приехали вовремя, очень профессиональные ребята. Знают все ГОСТы, проверили всееее абсолютно, устно проговорили, на следующий день дали акт. Очень довольна работой
+            p.review__content Однозначно рекомендую!!! Позвонила, ответили оперативно, назвали цену и после согласования сразу же приняли в работу. Приехали вовремя со всем необходимым оборудованием. Без лишней воды, всё по существу, показали и рассказали про все недочеты, акт прислали через 15 минут. Буду рекомендовать друзьям и знакомым.
           .review-card
             .review__author 
               .review__author--image 
                 img(src="../assets/img/reviews/author1.jpg", alt="author1")
               .review__author--description
-                .author--description__name Ирина
+                .author--description__name Людмила
                 .author--description__stars
                   img(src="../assets/img/svg/iconoir_star-solid.svg", alt="star")
                   img(src="../assets/img/svg/iconoir_star-solid.svg", alt="star")
                   img(src="../assets/img/svg/iconoir_star-solid.svg", alt="star")
                   img(src="../assets/img/svg/iconoir_star-solid.svg", alt="star")
                   img(src="../assets/img/svg/iconoir_star-solid.svg", alt="star")
-            p.review__content Обращались на приёмку однокомнатной новостройки. Ответили на сообщение сразу, несмотря на позднее время, договорились о времени, цена совпала. На прием приехали вовремя, очень профессиональные ребята. Знают все ГОСТы, проверили всееее абсолютно, устно проговорили, на следующий день дали акт. Очень довольна работой
+            p.review__content Спасибо за помощь! Быстро согласовали удобное для нас время, заключили договор. Профессионально всё осмотрели, дали советы и пояснения. Рекомендую! Ребята профи!
           .review-card
             .review__author 
               .review__author--image 
                 img(src="../assets/img/reviews/author1.jpg", alt="author1")
               .review__author--description
-                .author--description__name Ирина
+                .author--description__name Антон
                 .author--description__stars
                   img(src="../assets/img/svg/iconoir_star-solid.svg", alt="star")
                   img(src="../assets/img/svg/iconoir_star-solid.svg", alt="star")
                   img(src="../assets/img/svg/iconoir_star-solid.svg", alt="star")
                   img(src="../assets/img/svg/iconoir_star-solid.svg", alt="star")
                   img(src="../assets/img/svg/iconoir_star-solid.svg", alt="star")
-            p.review__content Обращались на приёмку однокомнатной новостройки. Ответили на сообщение сразу, несмотря на позднее время, договорились о времени, цена совпала. На прием приехали вовремя, очень профессиональные ребята. Знают все ГОСТы, проверили всееее абсолютно, устно проговорили, на следующий день дали акт. Очень довольна работой
+            p.review__content Связались моментально, даже поздно вечером! Согласовали время и стоимость без лишних вопросов. На приемке ребята были пунктуальны, с профессиональным оборудованием. Проверили каждый угол, указали на скрытые дефекты, о которых я бы и не подумал. Акт получили на следующий день. Очень доволен, рекомендую всем!
           .review-card
             .review__author 
               .review__author--image 
                 img(src="../assets/img/reviews/author1.jpg", alt="author1")
               .review__author--description
-                .author--description__name Ирина
+                .author--description__name Валерий
                 .author--description__stars
                   img(src="../assets/img/svg/iconoir_star-solid.svg", alt="star")
                   img(src="../assets/img/svg/iconoir_star-solid.svg", alt="star")
                   img(src="../assets/img/svg/iconoir_star-solid.svg", alt="star")
                   img(src="../assets/img/svg/iconoir_star-solid.svg", alt="star")
                   img(src="../assets/img/svg/iconoir_star-solid.svg", alt="star")
-            p.review__content Обращались на приёмку однокомнатной новостройки. Ответили на сообщение сразу, несмотря на позднее время, договорились о времени, цена совпала. На прием приехали вовремя, очень профессиональные ребята. Знают все ГОСТы, проверили всееее абсолютно, устно проговорили, на следующий день дали акт. Очень довольна работой
-        .slider-controllers 
-          button.controller.disable#prev
+            p.review__content Обратились за приемкой квартиры, и это был лучший выбор! Ответили быстро, цена прозрачная, без скрытых доплат. Специалисты приехали вовремя, всё проверили по ГОСТам: от розеток до вентиляции. Дали подробные пояснения и советы по устранению недочетов. Акт прислали в тот же день. Профессионализм на высоте!
+          .review-card
+            .review__author 
+              .review__author--image 
+                img(src="../assets/img/reviews/author1.jpg", alt="author1")
+              .review__author--description
+                .author--description__name Екатерина
+                .author--description__stars
+                  img(src="../assets/img/svg/iconoir_star-solid.svg", alt="star")
+                  img(src="../assets/img/svg/iconoir_star-solid.svg", alt="star")
+                  img(src="../assets/img/svg/iconoir_star-solid.svg", alt="star")
+                  img(src="../assets/img/svg/iconoir_star-solid.svg", alt="star")
+                  img(src="../assets/img/svg/iconoir_star-solid.svg", alt="star")
+            p.review__content Ребята — настоящие эксперты! Позвонили, сразу обсудили детали и назначили удобное время. На приемке проверили абсолютно всё: стены, полы, окна, сантехнику. Нашли даже мелкие трещины, которые я бы пропустил. Акт с подробным описанием получили через час. Очень рекомендую, работают четко и по делу!
+          .review-card
+            .review__author 
+              .review__author--image 
+                img(src="../assets/img/reviews/author1.jpg", alt="author1")
+              .review__author--description
+                .author--description__name Анастасия
+                .author--description__stars
+                  img(src="../assets/img/svg/iconoir_star-solid.svg", alt="star")
+                  img(src="../assets/img/svg/iconoir_star-solid.svg", alt="star")
+                  img(src="../assets/img/svg/iconoir_star-solid.svg", alt="star")
+                  img(src="../assets/img/svg/iconoir_star-solid.svg", alt="star")
+                  img(src="../assets/img/svg/iconoir_star-solid.svg", alt="star")
+            p.review__content Супер сервис! Связались в тот же день, уточнили все детали, цена приятно удивила. На приемке работали быстро, но тщательно — лазерный уровень, тепловизор, всё серьезно. Объяснили, какие недочеты критичны, а какие легко исправить. Акт прислали через 20 минут после осмотра. Буду советовать знакомым!
+          .review-card
+            .review__author 
+              .review__author--image 
+                img(src="../assets/img/reviews/author1.jpg", alt="author1")
+              .review__author--description
+                .author--description__name Пётр
+                .author--description__stars
+                  img(src="../assets/img/svg/iconoir_star-solid.svg", alt="star")
+                  img(src="../assets/img/svg/iconoir_star-solid.svg", alt="star")
+                  img(src="../assets/img/svg/iconoir_star-solid.svg", alt="star")
+                  img(src="../assets/img/svg/iconoir_star-solid.svg", alt="star")
+                  img(src="../assets/img/svg/iconoir_star-solid.svg", alt="star")
+            p.review__content Очень благодарен за профессиональную помощь! Договорились за день, приехали ровно в срок. Осмотрели квартиру с ног до головы, нашли проблемы с окнами и проводкой, о которых застройщик умолчал. Всё объяснили доступно, дали рекомендации. Акт получили сразу на почту. Рекомендую, если хотите быть уверены в качестве!
+        .slider-controllers.mobile-only-flex.desktop-hidden.table-hidden
+          button.controller.disable.prev
             img(src="../assets/img/svg/arrow-btn-slider.svg", alt="arrow")
-          button.controller.active#next
+          button.controller.active.next
             img(src="../assets/img/svg/arrow-btn-slider.svg", alt="arrow")

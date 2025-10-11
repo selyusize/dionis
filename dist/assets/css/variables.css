@@ -36,9 +36,14 @@
 	--btn-secondary--default-bg-color: rgba(255, 255, 255, 1);
 
 	/* botton response base btn (header) */
-	--btn-header--padding-Y: 8px;
-	--btn-header--padding-X: 16px;
+	--btn-header--padding-Y: 10.5px;
+	--btn-header--padding-X: 20px;
 	--btn-header--border-radius: 10px;
+
+	/* botton response footer base btn */
+	--btn-footer--padding-Y: 20px;
+	--btn-footer--padding-X: 16px;
+	--btn-footer--border-radius: 10px;
 
 	/* button response (black) */
 	--btn-footer-response--default-bg-color: rgba(33, 33, 35, 1);

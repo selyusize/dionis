@@ -4,20 +4,17 @@ block title
   title Главная | Дионис
 
 block content
-  section.white-theme.white-bg.services
+  section.white-theme.white-bg.services-page
     .container
-      div
-        .tag.h6
-          img(src="../assets/img/svg/h6.svg", alt="ellipse")
-          h6 Услуги
-        h2.mb-40 Наши услуги
+      div.services__title
+        div 
+          .tag.h6
+            img(src="../assets/img/svg/h6.svg", alt="ellipse")
+            h6 Услуги
+          h2.mb-40 Наши услуги
         div.why__description
-          p.paragraph Мы сопровождаем клиента на каждом этапе — будь то приемка квартиры, техническое обследование здания, проектирование или строительство. Работаем как с частными, так и с коммерческими объектами, помогая разобраться в деталях, защитить интересы и добиться качественного результата
-      article.priemka
-        .priemka__description
-          h3 Приемка квартир
-          p.paragraph Осмотр с помощью проф-оборудования, фото и видео-фиксация дефектов и оформление акта по СП, ГОСТ, ПУЭ.
-        a(href="#").btn.btn--secondary Подробнее
+          p.paragraph Мы сопровождаем клиента на каждом этапе — будь то Приёмка квартиры, техническое обследование здания, проектирование или строительство. Работаем как с частными, так и с коммерческими объектами, помогая разобраться в деталях, защитить интересы и добиться качественного результата
+      include ../includes/components/article-priemka.pug
       .services-list 
         .services-list__item 
           .services-list__item--title

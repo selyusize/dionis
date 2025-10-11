@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/index.css">
+    <script type="module" src="/assets/js/index.js"> </script>
     <title>О нас | Дионис</title>
   </head>
   <body>
@@ -14,13 +15,30 @@
       </div>
       <nav> 
         <ul> 
-          <li><a class="btn-header btn--nav-main" href="./priemka.html">Приемка квартир </a></li>
+          <li><a class="btn-header btn--nav-main" href="./priemka.html">Приёмка квартир </a></li>
           <li><a class="btn-header btn--nav" href="#">Главная</a></li>
           <li><a class="btn-header btn--nav" href="./about.html">О нас</a></li>
           <li><a class="btn-header btn--nav" href="./services.html">Услуги</a></li>
         </ul>
-      </nav><a class="btn-header btn--response" href="#">Оставить заявку </a>
+      </nav><a class="btn-header btn--response open-feedback" href="#">Оставить заявку </a>
     </header>
+    <div class="modal__wrapper">
+      <form class="modal__feedback" action="" method="post">
+        <div>
+          <h2>Оставьте заявку</h2>
+          <p class="description">и мы свяжемся с вами в ближайшее время</p>
+        </div>
+        <div class="inputs">
+          <input type="text" name="name" autocomplete="name" placeholder="Ваше имя*" required>
+          <input type="tel" name="phone" autocomplete="tel" placeholder="Ваш телефон*" required>
+          <input type="email" name="email" autocomplete="email" placeholder="Ваш e-mail">
+        </div>
+        <div>
+          <button class="btn btn--primary" type="submit" aria-label="Отправить заявку">Оставить заявку</button>
+          <p class="agree">Нажимая кнопку «Отправить», вы соглашаетесь с <a href="/">политикой конфиденциальности</a></p>
+        </div>
+      </form>
+    </div>
     <main> 
       <section class="white-theme white-bg hero-about-section">
         <div class="container">
@@ -123,7 +141,7 @@
     <footer class="section blue-bg blue-theme">
       <div class="container"> 
         <div class="footer__title">
-          <h2 class="mb-40">Оставьте заявку<br class="mobile-hidden"> и мы свяжемся с вами<br class="mobile-hidden"> в ближайшее время</h2><a class="btn--response btn--response-footer" href="#">Оставить заявку</a>
+          <h2 class="mb-40">Оставьте заявку<br class="mobile-hidden"> и мы свяжемся с вами<br class="mobile-hidden"> в ближайшее время</h2><a class="btn btn--response btn--response-footer open-feedback" href="#">Оставить заявку</a>
         </div>
         <div class="footer-contacts">
           <div class="flex flex-col tel-list"> <a class="footer-contacts--tel" href="tel:+79144110611">8 (914) 411-06-11</a><a class="footer-contacts--tel" href="tel:+74212247365">24-73-65</a></div>
@@ -134,7 +152,7 @@
             <nav> 
               <ul class="footer-menu">
                 <li> <a href="#">Главная</a></li>
-                <li> <a href="#">Приемка квартир</a></li>
+                <li> <a href="#">Приёмка квартир</a></li>
                 <li> <a href="#">О нас</a></li>
                 <li> <a href="#">Услуги</a></li>
               </ul>
@@ -145,7 +163,7 @@
             </div>
           </div>
           <div class="mini-container">
-            <div class="footer-end"> <img src="../../assets/img/logo/logo-header-mobile-white.png" alt="logo-white"><span>ООО “СК Дионис” © 2025</span></div>
+            <div class="footer-end"> <a href="/"><img src="../../assets/img/logo/logo-header-mobile-white.png" alt="logo-white"></a><span>ООО “СК Дионис” © 2025</span></div>
             <div class="footer-policy"> <a href="#">Пользовательское соглашение</a><a href="#">Политика конфиденциальности</a></div>
           </div>
         </div>

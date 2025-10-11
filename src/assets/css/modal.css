@@ -1,0 +1,86 @@
+.modal__feedback {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	* {
+		width: 100%;
+	}
+
+	position: fixed;
+	z-index: 1005;
+
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%);
+
+	padding: 32px;
+	gap: 32px;
+	border-radius: 32px;
+
+	max-width: 512px;
+
+	background-color: white;
+
+	div {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.description {
+		margin-top: 2px;
+		font-size: 20px;
+		color: rgba(110, 110, 127, 1);
+	}
+
+	.inputs {
+		gap: 12px;
+
+		font-size: 16px;
+
+		input {
+			width: 100%;
+			border: 1px solid rgba(129, 149, 248, 0.2);
+
+			&::placeholder {
+				font-size: 16px !important;
+			}
+		}
+	}
+
+	button {
+		min-width: 100%;
+	}
+
+	.agree {
+		margin-top: 12px;
+		font-size: 12px;
+		line-height: 150%;
+		font-weight: 500;
+
+		color: rgba(110, 110, 127, 1);
+
+		a {
+			text-decoration: underline;
+			color: rgba(61, 89, 235, 1);
+		}
+	}
+}
+
+.modal__wrapper {
+	display: none;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	z-index: 1000;
+}
+
+.modal__wrapper::after {
+	content: '';
+	width: 100dvw;
+	height: 100dvh;
+	z-index: 10;
+	position: absolute;
+	background-color: rgba(24, 24, 29, 0.4);
+}

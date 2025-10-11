@@ -1,0 +1,13 @@
+.modal__wrapper
+  form(action="" method="post").modal__feedback
+    div
+      h2 Оставьте заявку
+      p.description и мы свяжемся с вами в ближайшее время
+    div.inputs
+      input(type="text" name="name" autocomplete="name" placeholder="Ваше имя*" required)
+      input(type="tel" name="phone" autocomplete="tel" placeholder="Ваш телефон*" required)
+      input(type="email" name="email" autocomplete="email" placeholder="Ваш e-mail")
+    div
+      button(type="submit" aria-label="Отправить заявку").btn.btn--primary Оставить заявку
+      p.agree Нажимая кнопку «Отправить», вы соглашаетесь с 
+        a(href="/") политикой конфиденциальности

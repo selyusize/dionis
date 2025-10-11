@@ -10,20 +10,7 @@ input {
 	border-radius: 14px;
 
 	background-color: var(--input--default-bg-color);
-
-	&::placeholder {
-		color: var(--input--default-placeholder-text-color);
-	}
-
-	&:invalid {
-		border-color: var(--input--error-border-color);
-
-		&::placeholder {
-			color: var(--input--error-text-color);
-		}
-	}
 }
-
 h1,
 h2,
 h3,

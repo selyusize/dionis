@@ -1,0 +1,24 @@
+header {
+	transition: all 0.3s ease-in-out, margin 0s;
+}
+
+a,
+button,
+li,
+.btn > img,
+.btn--secondary > img {
+	transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+	img {
+		transform: rotate(45deg);
+	}
+}
+
+.btn--secondary:hover {
+	img {
+		filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+			hue-rotate(14deg) brightness(104%) contrast(102%);
+	}
+}
